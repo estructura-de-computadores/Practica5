@@ -19,6 +19,7 @@ int main ()
 		printf ("La suma es %d\n",suma);
 	}
 	else{
+		printf ("ERROR: El primer numero debe ser mayor que el segundo\n");
 		main();
 	}
 
