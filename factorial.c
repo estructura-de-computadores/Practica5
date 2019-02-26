@@ -9,7 +9,7 @@ int main ()
 	printf ("Introduce un numero para hallar su factorial: \n");
 
 	scanf ("%lf",&Num);
-	if (Num>=1){
+	if (Num>=0){
 		for (i=1;i<=Num;i++)
 		{
 			Fac = Fac * i;
