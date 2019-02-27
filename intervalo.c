@@ -5,23 +5,21 @@ int main ()
 
 	m=n=suma=0;
 
+	do{	
 	printf ("Escribe dos numeros de un intervalo, el primero debe ser mayor que el segundo\n");
 	printf ("Primer numero:\n");
 	scanf ("%d",&m);
 	printf ("Segundo numero:\n");
 	scanf ("%d",&n);
 
-	if(m>n){
-		for (i=n;i<=m;i++)
-		{
-			suma = suma + i;
-		}
-		printf ("La suma es %d\n",suma);
+	
+	for (i=n;i<=m;i++)
+	{
+		suma = suma + i;
 	}
-	else{
-		printf ("ERROR: El primer numero debe ser mayor que el segundo\n");
-		main();
-	}
+	printf ("La suma es %d\n", suma);
+	}	
+	while (n>m);
 
 	return 0;
 }
